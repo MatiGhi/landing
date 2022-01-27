@@ -2211,7 +2211,7 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
 }
 
 /*Version Mobile*/
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 481px) {
 
     .service-card {
         margin: 0.5rem auto;
@@ -2920,7 +2920,7 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
 
 
 /*Version Mobile*/
-@media only screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width:480px) {
 
     .service-card {
         margin: 0.5rem auto;
@@ -3287,8 +3287,8 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
     .hero-image-my-name {
         font-family: var(--font-title);
         outline: thin;
-        width: 150px;
-        font-size: 9.0vw;
+        width: 100%;
+        font-size: 8.0vw;
         animation: changeTransition 15s ease infinite;
     }
 
