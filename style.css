@@ -3210,6 +3210,7 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
         color: var(--hero-text-color);
         animation: changeColorText 15s ease;
         margin-left: 60%;
+        margin-top: 50%;
         /* margin-bottom: 50%; */
     }
 
