@@ -3264,11 +3264,11 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
         }
 
         90% {
-            color: var(--white-color);
+            color: var(--black-color);
         }
 
         100% {
-            color: var(--white-color);
+            color: var(--black-color);
         }
 
 
@@ -3309,15 +3309,19 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
         }
 
         23% {
-            color: var(--black-alpha-color);
+            color: var(--black-color);
         }
 
         25% {
-            color: var(--black-alpha-color);
+            color: var(--black-color);
         }
 
         30%{
-            color: var(--white-alpha-color);
+            color: var(--black-color);
+        }
+
+        35% {
+            color: var(--black-color);
         }
 
         40% {
@@ -3395,27 +3399,27 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
             }
 
             15% {
-                color: var(--black-alpha-color);
+                color: var(--black-color);
             }
         
             20% {
-                color: var(--black-alpha-color);
+                color: var(--black-color);
             }
         
             25% {
-                color: var(--black-alpha-color);
+                color: var(--black-color);
             }
 
             30% {
-                color: var(--black-alpha-color);
+                color: var(--white-alpha-color);
             }
 
             32% {
-                color: var(--black-alpha-color);
+                color: var(--white-alpha-color);
             }
 
             35% {
-                color: var(--black-alpha-color);
+                color: var(--white-alpha-color);
             }
 
             40% {
@@ -3463,7 +3467,7 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
             }
         
             100% {
-                color: var(--white-color);
+                color: var(--black-color);
             }
 
             from {
@@ -3554,7 +3558,7 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
         font-size: 8.5vw;
         color: var(--hero-text-color);
         font-family: var(--font-title);
-        animation: gradient 20s ease infinite 0s;
+        animation: gradient 18s ease infinite 0s;
         animation-name: changeSubtitleTextColor, toTopBottom;
         margin-left: 5%;
         margin-bottom: 3rem;
