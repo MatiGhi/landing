@@ -3291,6 +3291,8 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
         width: 100%;
         font-size: 8.0vw;
         animation: changeTransition 15s ease;
+        margin-right: 50%;
+        margin-top: 30%;
     }
 
     @keyframes changeTransition {
@@ -3550,13 +3552,13 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
 
     .hero-image-subtitle {
         font-size: 8.5vw;
-        margin-bottom: 3rem;
-        margin-right:40%;
         color: var(--hero-text-color);
         font-family: var(--font-title);
         animation: gradient 20s ease infinite 0s;
         animation-name: changeSubtitleTextColor, toTopBottom;
         margin-left: 5%;
+        margin-bottom: 3rem;
+        margin-right:40%;
     }
 
     @keyframes changeSubtitleTextColor {
