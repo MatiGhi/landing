@@ -4828,6 +4828,21 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
             } 
     }
 
+    .hero-image-lines{
+        display:none;
+        visibility: hidden;
+    }
+
+    .hero-image-social{
+        display:none;
+        visibility: hidden;
+    }
+
+    .hero-image-socials::after{
+        display:none;
+        visibility: hidden;
+    }
+
     .sentence{
         color: #222;
         font-size: 30px;
