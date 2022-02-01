@@ -59,7 +59,7 @@
 
     (() => {
         let fecha = new Date().getFullYear();
-        d.querySelector('.date').innerHTML = `${fecha} | Matias Ghiglione`;
+        d.querySelector('.date').innerHTML = `${fecha} | Created & Designed by Matias Ghiglione`;
     })();
 
 })(document)

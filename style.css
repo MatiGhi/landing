@@ -1206,22 +1206,47 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
         background-color: transparent;
     }
 
-    /* .hero-image-content{
-        width: 70%;
-    } */
+    .hero-image-content{
+        width: 60%;
+    }
 
     .hero-image-picture {
         width: 0%;
     }
 
+    .hero-image-line > a {
+        text-decoration: none;
+        color: coral;
+    }
+
+    .hero-image-social > ul > li {
+        list-style: none;
+        color: coral;
+    }
+    .hero-image-socials::after {
+        display: block;
+        content: "";
+        /* height: 20.4rem; */
+        height: 9.4rem;
+        width: 1px;
+        /* background-color: #4f4f4f; */
+        background-color: #eeeeee;
+        position: absolute;
+        /* bottom: 8%; */
+        bottom: 38%;
+        right: 17%;
+        /* right: 7%; */
+        /* right: 3.75rem; */
+    }
+
     .hero-image-hello{
         font-family: var(--font-title);
         outline: thin;
-        font-size: 7.0vw;
+        font-size: 4vw;
         color: var(--hero-text-color);
         animation: changeColorText 15s ease;
         margin-left: 60%;
-        margin-top: 0%;
+        margin-top: 10%;
         /* margin-top: 10%; */
     }
 
@@ -1231,6 +1256,10 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
         }
 
         10%{
+            color: var(--black-color);
+        }
+
+        15%{
             color: var(--black-color);
         }
 
@@ -1284,8 +1313,8 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
 
 
         from {
-            margin-left: 5%;
-            margin-top: 0%;
+            margin-left: 15%;
+            margin-top: 10%;
         }
 
         to{
@@ -1295,14 +1324,15 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
     }
     
     .hero-image-my-name {
+        display: table-cell;
         font-family: var(--font-title);
         outline: thin;
         /* font-size: 3.0vw; */
-        font-size: 3.5vw;
+        font-size: 3vw;
         animation: changeTransition 15s ease;
         /* margin-right: 25%; */
         margin-right: 0%;
-        margin-top: 30%;
+        margin-top: 20%;
     }
     
     @keyframes changeTransition {
@@ -1377,9 +1407,11 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
         100% {
             color: var(--white-color);
         }
+
+        
             to{
                 margin-right: 0%;
-                margin-top: 30%;
+                margin-top: 20%;
             } 
     }
     
@@ -1390,8 +1422,10 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
         color: var(--hero-text-color);
         animation: gradient 15s ease;
         animation-name: changeNameColor;
-        margin-top: 15%;
-        margin-left: 69%;
+        /* margin-top: 15%; */
+        /* margin-left: 69%; */
+        margin-left: 80%;
+        
     }
     
     @keyframes changeNameColor {
@@ -1406,6 +1440,7 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
 
         15% {
             color: var(--black-color);
+
         }
     
         20% {
@@ -1482,8 +1517,9 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
         }
 
         to{
-            margin-top: 15%;
-            margin-left: 69%;
+            /* margin-top: 15%; */
+            /* margin-left: 69%; */
+            margin-left: 80%;
         } 
     }
     .sentence{
@@ -1503,13 +1539,14 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
 
     .slidingVertical{
         display: inline;
-        text-indent: 8px;
+        /* text-indent: 8px; */
     }
     .slidingVertical span{
         animation: topToBottom 10s linear infinite 10s;
         -ms-animation: topToBottom 10s linear infinite 10s;
         -webkit-animation: topToBottom 10s linear infinite 10s;
-        color: #AC4644;
+        /* color: #AC4644; */
+        color: coral;
         opacity: 0;
         overflow: hidden;
         position: absolute;
@@ -1553,15 +1590,21 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
         100% { opacity: 0; }
     }
 
+    
+
     .hero-image-subtitle {
         font-size: 4vw;
         color: var(--hero-text-color);
         font-family: var(--font-title);
         animation: gradient 18s ease infinite 0s;
         animation-name: changeSubtitleTextColor, toTopBottom;
-        margin-left: 5%;
-        margin-bottom: 3rem;
-        margin-right:40%;
+        margin-left: 22%;
+        /* margin-bottom: 3rem; */
+        /* margin-right:40%; */
+    }
+
+    .hero-image-subtitle .slidingVertical {
+        margin-left: 2%;
     }
 
     @keyframes changeSubtitleTextColor {
@@ -1623,7 +1666,6 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
         }
 
     }
-
 }
 
 /*Versión Desktop*/
@@ -1694,11 +1736,30 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
     }
 
     .hero-image-content{
-        width: 76%;
+        /* width: 76%; */
+        width: 50%;
+        display: flex;
+        flex-direction: column;
     }
 
     .hero-image-picture {
-        width: 0%;
+        /* width: 0%; */
+        width: 10%;
+    }
+
+    .hero-image-lines{
+        background-color: var(--white-color);
+    }
+
+    .hero-image-line {
+        font-family: var(--font-title);
+        outline: thin;
+        font-size: 14.0vw;
+        color: var(--hero-text-color);
+        animation: gradient 15s ease;
+        animation-name: changeNameColor;
+        margin-top: 15%;
+        margin-left: -69%;
     }
 
     .hero-image-hello{
@@ -1711,7 +1772,7 @@ box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25)
         margin-top: 0%;
         /* margin-top: 10%; */
     }
-
+    
     @keyframes changeColorText {
         0% {
             color: var(--black-color);
